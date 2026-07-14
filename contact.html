@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Request Help — Supa Mechanics Uganda</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <div class="logo">SUPA<span>MECHANICS</span> UG</div>
+    <nav><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="parts.html">Spare Parts</a></li>
+      <li><a href="mechanics.html">Mechanics</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul></nav>
+    <a href="tel:+256700123456" class="btn btn-red">Call 24/7</a>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <h1>Get In Touch</h1>
+    <p>Breakdown, parts order, garage staffing — tell us what you need.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <h2 style="color:var(--green-dark);margin-bottom:18px">Reach us</h2>
+        <ul class="info-list">
+          <li><strong>24/7 Dispatch</strong>+256 757275809</li>
+          <li><strong>Email</strong>supamechanics22@gmail.com</li>
+          <li><strong>Office</strong>Plot 14, Industrial Area, Kampala</li>
+          <li><strong>Hours</strong>Office: Mon–Sat 8am–10pm · Dispatch: 24/7</li>
+          <li><strong>Service Area</strong>Kampala, Entebbe, Jinja, wakiso, Gulu, Mbale, Mbarara, Soroti</li>
+        </ul>
+      </div>
+      <form class="form" onsubmit="event.preventDefault();alert('Thanks! We will get back to you shortly.');this.reset();">
+        <label for="name">Full Name</label>
+        <input id="name" type="text" required placeholder="Ausi Mulo">
+
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" required placeholder="+256 7XX XXX XXX">
+
+        <label for="type">I need help with</label>
+        <select id="type" required>
+          <option value="">Select…</option>
+          <option>Roadside breakdown</option>
+          <option>Spare parts order</option>
+          <option>Garage staffing</option>
+          <option>Diagnostics / inspection</option>
+          <option>Other</option>
+        </select>
+
+        <label for="msg">Describe your issue or request</label>
+        <textarea id="msg" required placeholder="My car broke down on Northern Bypass…"></textarea>
+
+        <button type="submit" class="btn btn-red" style="width:100%">Send Request</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="copyright">© 2026 Supa Mechanics Uganda. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
